@@ -1,9 +1,14 @@
-using System;
+
+
+
 
 class Program
 {
+    [STAThread]
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello FinalProject World!");
+        Application.EnableVisualStyles();
+        Application.SetCompatibleTextRenderingDefault(false);
+        Application.Run(new CalculatorForm());
     }
 }
